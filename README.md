@@ -1,6 +1,6 @@
 # ToshiBot-Is-Back
 
-Before you use toshibot read the Terms of service in discord (it's universal with any toshinou bot to be honest) Discord - https://discord.gg/4JM8Xj Have any suggestions? or know any fixes to some issues? leave them in "Issues"
+Before you use toshibot read the Terms of service in discord (it's universal with any toshinou bot to be honest) Discord - https://discord.gg/z4rW6DR Have any suggestions? or know any fixes to some issues? leave them in "Issues"
 #ToshiBot
 A cheat/tool/bot/whatever for a browser flash game named DarkOrbit. It does some pretty neat stuff and is still under heavy development. The tool was originally created by freshek, but has been modified and updated by a lot of different people since freshek abandoned it. There's still a HIGH RISK OF BAN, as with any other bot (vertex, golem, etc) and i don't recommend you using it on an account you don't want to lose.
 
@@ -12,8 +12,8 @@ TODO: -Experiment with the bot a bit to learn to make code more efficient
 
 Issues : If the tool doesn't work, try to use Private mode/Incognito. Other situations should be reported in issues (game updates are fine there too).
 
-Credits : Tanoshiizo for permission to continue Ultra! Dm94 for SRC source of revamped, and Freshek for giving us toshinou opensource!
+Credits : Tanoshiizo for permission to continue Ultra! and Freshek for giving us toshinou opensource!
 
-Discord of bot - https://discord.gg/4JM8Xj
+Discord of bot - https://discord.gg/z4rW6DR
 
 Github of Toshinou-Ultra creator - https://github.com/Alph4rd/Toshinou-Ultra
