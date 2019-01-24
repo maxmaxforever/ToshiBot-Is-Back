@@ -1,7 +1,7 @@
 class MessagesHandler {
 
 	static get ID() {
-		return 10725;
+		return 11419; 
 	}
 
 	constructor() {

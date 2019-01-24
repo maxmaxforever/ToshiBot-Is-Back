@@ -1,110 +1,106 @@
 class Variables {
-
-	static get assetCreateX() {   //first variables update
-		return "_-B6";
+	static get assetCreateX() {
+		return "_-32w";
 	}
 	
 	static get assetCreateY() {
-		return "_-IE";
+		return "_-H3t";
 	}
 	
 	static get boxType() {
-		return "_-F1O";
+		return "_-86";
 	}
 	
 	static get gateId() {
-		return "_-I3h";
+		return "_-K2V";
 	}
 	
 	static get gateType() {
-		return "_-91u";
+		return "_-b3l";
 	}
 	
 	static get attackerId() {
-		return "_-lV";
+		return "_-g5";
 	}
 	
 	static get heroAttackedId() {
-		return "_-o1p";
+		return "_-g4j";
 	}
 	
 	static get attackHp() {
-		return "_-t3i";
+		return "_-v48";
 	}
 	
 	static get attackShd() {
-		return "_-94b";
+		return "_-z47";
 	}
 	
 	static get heroInitMaxHp() {
-		return "_-n4c";
+		return "_-85y";
 	}
 	
 	static get heroInitMaxShd() {
-		return "_-45h";
+		return "_-E3k";
 	}
 	
 	static get heroInitHp() {
-		return "_-p3b";
+		return "_-X3m";
 	}
 	
 	static get heroPetId() {
-		return "_-D3Q";
+		return "_-r2p";
 	}
 	
 	static get hpUpdateMaxHp() {
-		return "_-mb";
+		return "_-W3m";
 	}
 	
 	static get hpUpdateHp() {
-		return "_-D1A";
-	}
-	
-	static get heroUpdateShd() {
-		return "_-O3w";
+		return "_-V2H";
 	}
 	
 	static get resource() {
-		return "_-Q2x";
+		return "_-B2a";
 	}
 	
 	static get attackerId() {
-		return "_-lV";
+		return "_-g5";
 	}
 	
 	static get attackedId() {
-		return "_-4p";
+		return "_-X2S";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-r4z";
+		return "_-d4V";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-J1Y";
+		return "_-G2";
 	}
 	
 	static get moveDuration() {
-		return "_-m3l";
+		return "_-05L";
 	}
 	
 	static get selectMaxHp() {
-		return "_-mb";
+		return "_-W3m";
 	}
 	
 	static get selectMaxShd() {
-		return "_-45h";
+		return "_-E3k";
 	}
 	
 	static get selectHp() {
-		return "_-D1A";
+		return "_-V2H";
 	}	
-			
+	
 	static get resourceType() {
-		return "_-Rc";
+		return "_-p1M";
 	}
 
 	static get battlestationClanDiplomacy() {
-		return "_-rS"; 
+		return "_-j3l"; 
 	}
+	
 }

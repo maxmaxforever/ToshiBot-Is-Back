@@ -256,6 +256,12 @@ function logic() {
 		}
 	}
 
+	if(api.sleeping()){
+		// i forgot what i was going to use this for :|
+		// call api.sleep(ms) and the bot will only execute the functions above this check
+		return;
+	}
+
 	if ((api.startTime && $.now() - api.startTime >= window.settings.settings.refreshTime * 60000)
 	 && window.settings.settings.enableRefresh && !window.settings.settings.ggbot) {
 		if ((api.Disconected && !state) || window.settings.settings.palladium) {
@@ -431,6 +437,12 @@ function logic() {
 			api.move(ship.ship.position.x - MathUtils.random(-50, 50), ship.ship.position.y - MathUtils.random(-50, 50));
 			api.targetShip = ship.ship;
 			return;
+		} else if(!window.settings.settings.palladium && window.settings.settings.changeMode){
+			// Change to flying mode while looking for npcs/boxes.
+			// It doesn't change while collecting because the ship might get stuck for a few seconds
+			// after changing config.
+			// I don't know how this would work on palladium, so we don't do it while there
+			api.flyingMode();
 		}
 	}
 	// npc killing stuck
@@ -532,7 +544,7 @@ function logic() {
 			api.combatMode();
 			if(window.settings.settings.useAbility && window.hero.skillName && dist < window.settings.settings.npcCircleRadius){
 				// Make hp and shield heren a user option.
-				if((window.hero.skillname == "cyborg" && api.targetShip.hp > window.globalSettings.cyborgHp)||
+				if((window.hero.skillName == "cyborg" && api.targetShip.hp > window.globalSettings.cyborgHp)||
 					(window.hero.skillName == "venom" && api.targetShip.hp > window.globalSettings.venomHp))
 				{
 					api.useAbility();

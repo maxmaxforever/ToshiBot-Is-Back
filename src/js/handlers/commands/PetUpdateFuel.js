@@ -1,6 +1,6 @@
 class PetUpdateFuel {
 	static get ID() {
-		return 23529;
+		return 18470; 
 	}
 
 	constructor() {

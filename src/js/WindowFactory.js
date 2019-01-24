@@ -6,7 +6,7 @@ class WindowFactory {
 
     if (!window.mainFrameWindow) {
       window.mainFrameWindow = this.windowsStructure({
-        text: "ToshiBot1.5 Rushed update edition",
+        text: "ToshiBot 1.7",
         isMain: true
       })[0];
 

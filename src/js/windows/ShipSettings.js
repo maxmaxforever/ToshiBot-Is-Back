@@ -1,8 +1,8 @@
 class ShipSettings{
     createWindow() {
         this.shipSettingsWindow = WindowFactory.createWindow({
-          width: 320,
-          text: "Ship Settings"
+            width: 320,
+            text: "Ship Settings"
         });
     
         let controls = [
@@ -22,6 +22,14 @@ class ShipSettings{
             event: function () {
                 $(".formations").prop("disabled", !this.checked);
                 window.settings.settings.changeFormation = this.checked;
+            }
+        },
+        {
+            name: 'changeMode',
+            labelText: "Change to flying mode when looking for npcs/boxes",
+            appendTo: this.shipSettingsWindow,
+            event: function () {
+                window.settings.settings.changeMode = this.checked;
             }
         },
         {

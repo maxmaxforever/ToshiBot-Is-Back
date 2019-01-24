@@ -1,19 +1,19 @@
 class ShipMoveHandler {
-  static get ID() {
-    return 28188;
-  }
+	static get ID() {
+		return 179; 
+	}
 
-  constructor() {
-    this._handler = function (e, a) {
-      let shipMoveCmd = JSON.parse(e.detail);
-      let ship = a.ships[shipMoveCmd.userId];
+	constructor() {
+		this._handler = function (e, a) {
+			let shipMoveCmd = JSON.parse(e.detail);
+			let ship = a.ships[shipMoveCmd.userId];
 
-      if (ship != null)
-        ship.setTarget(shipMoveCmd.x, shipMoveCmd.y, shipMoveCmd[Variables.moveDuration]);
-    }
-  }
+			if (ship != null)
+				ship.setTarget(shipMoveCmd.x, shipMoveCmd.y, shipMoveCmd[Variables.moveDuration]);
+		}
+	}
 
-  get handler() {
-    return this._handler;
-  }
+	get handler() {
+		return this._handler;
+	}
 }
