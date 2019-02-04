@@ -19,7 +19,7 @@ $(document).ready(function () {
 	let check = SafetyChecker.check();
 
 	// Try to fix false positive on JS Change
-	// it refreshes the page 3 times
+	// it refreshes the page 3 times (sometimes doesnt work for some reason)
 	if(refreshCounter > 0 && !check){
 		api.changeRefreshCount(refreshCounter-1);
 		window.location.reload();

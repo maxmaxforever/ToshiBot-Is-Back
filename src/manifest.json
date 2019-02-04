@@ -1,22 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "Toshinou Infinite",
-  "version": "0.4",
+  "name": "Toshibot 1.7",
+  "version": "1.7",
   "default_locale": "en",
   "description": "__MSG_desextension__",
     "page_action": {
       "default_icon": {
-        "16": "images/Toshinou-logo-infinite-loop-16x16.png",
-        "32": "images/Toshinou-logo-infinite-loop-32x32.png",
-        "48": "images/Toshinou-logo-infinite-loop-48x48.png",
-        "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+        "16": "images/Toshinou-logo-16x16.png",
+        "32": "images/Toshinou-logo-32x32.png",
+        "48": "images/Toshinou-logo-48x48.png",
+        "128": "images/Toshinou-logo-128x128.png"
       }
     },
   "icons": {
-    "16": "images/Toshinou-logo-infinite-loop-16x16.png",
-    "32": "images/Toshinou-logo-infinite-loop-32x32.png",
-    "48": "images/Toshinou-logo-infinite-loop-48x48.png",
-    "128": "images/Toshinou-logo-infinite-loop-128x128.png"
+    "16": "images/Toshinou-logo-16x16.png",
+    "32": "images/Toshinou-logo-32x32.png",
+    "48": "images/Toshinou-logo-48x48.png",
+    "128": "images/Toshinou-logo-128x128.png"
   },
 
   "content_scripts": [
