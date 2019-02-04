@@ -19,14 +19,6 @@ class AutolockWindow {
           }
         },
         {
-          name: 'autoAttack',
-          labelText: 'Auto attack Player after lock',
-          appendTo: this.autolockWindow,
-          event: function () {
-            window.settings.settings.autoAttack = this.checked;
-          }
-        },
-        {
           name: 'lockNpc',
           labelText: 'Autolock NPCs (key: x)',
           appendTo: this.autolockWindow,
@@ -41,15 +33,7 @@ class AutolockWindow {
           event: function () {
             window.settings.settings.excludeNpcs = this.checked;
           }
-        },
-        {
-          name: 'autoAttackNpcs',
-          labelText: 'Auto attack NPC after lock',
-          appendTo: this.autolockWindow,
-          event: function () {
-            window.settings.settings.autoAttackNpcs = this.checked;
-          }
-        },
+        }
       ];
   
       options.forEach((option) => {

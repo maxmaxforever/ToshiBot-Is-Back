@@ -21,9 +21,18 @@ class Minimap {
 
 		this.canvas.click(function (e) {
 			var pos = self.minimap.position();
-			var x = (e.clientX - pos.left) * (window.b1) - window.b3;
-			var y = (e.clientY - pos.top) * (window.b2) - window.b3;
-			Injector.injectScript('document.getElementById("preloader").moveShip(' + x + ',' + y + ');');
+			if(window.globalSettings.windowsToTabs){
+				var movable = e.target.parentNode.parentNode.parentNode.style;
+			}else{
+				var movable = e.target.parentNode.parentNode.style;
+			}
+			var movable_x = parseInt(movable.left) || 0;
+			var movable_y = parseInt(movable.top) || 0;
+			var x = ((e.clientX - pos.left) - movable_x) * (window.b1)-window.b3;
+			var y = ((e.clientY - pos.top) - movable_y) * (window.b2)-window.b3;
+
+			
+			self._api.move(x,y);
 		});
 	}
 

@@ -175,3 +175,9 @@
   background: #15242d;
   cursor: pointer;
 }
+
+select{
+  background-color: rgba(22, 38, 47, 0.9);
+  border: 1px solid rgb(40, 116, 144);
+  color: rgb(232, 225, 191);
+}

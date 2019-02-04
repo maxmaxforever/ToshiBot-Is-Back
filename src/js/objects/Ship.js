@@ -10,6 +10,7 @@ class Ship extends Movable {
 		this.clanDiplomacy = clanDiplomacy;
 		this.cloaked = cloaked;
 		this.ship = ship;
+		this.firstAttacker = null;
 	}
 
 	setTarget(targetX, targetY, time) {

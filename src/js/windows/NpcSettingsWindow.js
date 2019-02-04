@@ -32,6 +32,7 @@ class NpcSettingsWindow {
 			"-=[ Aider Streuner ]=-",
 			"-=[ Recruit Streuner ]=-",
 			"-=[ Lordakia ]=-",
+			"* Lordakium Spore *",
 			"-=[ Devolarium ]=-",
 			"-=[ Mordon ]=-",
 			"-=[ Sibelon ]=-",

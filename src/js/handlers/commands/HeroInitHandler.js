@@ -1,6 +1,6 @@
 class HeroInitHandler {
   static get ID() {
-    return 20163; 
+    return 23148; 
   }
 
 	constructor(f) {
@@ -23,6 +23,7 @@ class HeroInitHandler {
 
 			window.pet = null;
 			a.currentModule = -1;
+			window.invertedMovement = false;
 
 			if (window.hero == null) {
 				window.hero = new Hero(heroJson.x, heroJson.y, heroJson.factionId, heroJson.userId, heroJson.mapId);

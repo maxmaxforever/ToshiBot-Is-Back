@@ -427,7 +427,7 @@ function logic() {
 			api.collectBox(box.box);
 			api.targetBoxHash = box.box.hash;
 			return;
-		} else if (ship.ship && ship.distance < 1000 && window.settings.settings.killNpcs) {
+		} else if (!api.lockedShip &&ship.ship && ship.distance < 1000 && window.settings.settings.killNpcs) {
 			api.lockShip(ship.ship);
 			api.triedToLock = true;
 			api.targetShip = ship.ship;
@@ -442,9 +442,33 @@ function logic() {
 			// It doesn't change while collecting because the ship might get stuck for a few seconds
 			// after changing config.
 			// I don't know how this would work on palladium, so we don't do it while there
-			api.flyingMode();
+			if (window.settings.settings.autoChangeConfig && window.settings.settings.flyingConfig != window.hero.shipconfig) {
+				api.changeConfig();
+				return;
+			}
+			if (window.settings.settings.changeFormation && api.formation != window.settings.settings.flyingFormation) {
+				api.changeFormation(window.settings.settings.flyingFormation);
+				return;
+			}
+			// Not calling the function from api because i want to return after changing formation/config
+			// so the game doesn't lag
 		}
 	}
+
+	if (!api.attacking && api.lockedShip &&
+		!api.isShipOnBlacklist(api.lockedShip.id) &&
+		(window.settings.settings.killNpcs && api.lockedShip.isNpc)) {
+			api.startLaserAttack();
+			api.lastAttack = $.now();
+			api.attacking = true;
+	}
+
+
+	// firstAttacker is null if npc is not attacked 
+	if(api.targetShip != null && api.targetShip.firstAttacker != window.hero.id && api.targetShip.firstAttacker != null){
+		api.resetTarget("enemy");
+	}
+
 	// npc killing stuck
 	if ((api.targetShip && $.now() - api.lockTime > 5000 && ($.now() - api.lastAttack > 5000)) || !api.attacking && ($.now() - api.lastAttack > 8000)){
 		api.resetTarget("enemy");

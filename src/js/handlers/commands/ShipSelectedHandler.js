@@ -1,6 +1,6 @@
 class ShipSelectedHandler {
 	static get ID() {
-		return 3877; 
+		return 19624; 
 	}
 
 	constructor() {
@@ -21,13 +21,6 @@ class ShipSelectedHandler {
 
 				
 				a.lockedShip = ship;
-				if (!api.attacking && !a.isShipOnBlacklist(parsedJson.userId) &&(window.settings.settings.killNpcs && ship.isNpc && !window.settings.settings.pause) || (window.settings.settings.autoAttack && ship.isEnemy && !ship.isNpc) || (window.settings.settings.autoAttackNpcs && ship.isNpc)) {
-					setTimeout(() => {
-						api.startLaserAttack();
-						a.lastAttack = $.now();
-						api.attacking = true;
-					}, 250);
-				}
 			}
 		}
 	}

@@ -435,8 +435,10 @@ class Api {
 
 			if (dist < minDist) {
 				if (ship.isNpc && window.settings.getNpc(ship.name) && !this.isShipOnBlacklist(ship.id) && !ship.isAttacked) {
-					finalShip = ship;
-					minDist = dist;
+					if(ship.firstAttacker == null || (ship.firstAttacker != null && ship.firstAttacker == window.hero.id)){
+						finalShip = ship;
+						minDist = dist;
+					}
 				}
 			}
 		}
@@ -467,9 +469,11 @@ class Api {
 		};
 	}
 	
-	  findNearestGateForRunAway(enemy) {
+	  	  findNearestGateForRunAway(enemy) {
 		let minDist = 100000;
 		let finalGate;
+		let bestGate = 0;
+		let bestDist = 0;
 		this.gates.forEach(gate => {
 			// Avoid pvp gates if Jump and Return is enabled
 			// 1-5->4-4 | 3-5->4-4 | 2-5->4-4 | 1-4->4-1 | 2-4->4-2 | 3-4->4-3 | x-8->x-BL respectively
@@ -477,16 +481,24 @@ class Api {
 			if(gate.gateType == 1 && !(window.settings.settings.jumpFromEnemy && pvpgates.indexOf(gate.gateId) != -1)){
 				let enemeyDistance = enemy.distanceTo(gate.position);
 				let dist = window.hero.distanceTo(gate.position);
+
 				if (enemeyDistance < dist) {
-					return;
-				}
-			
-				if (dist < minDist) {
-					finalGate = gate;
-					minDist = dist;
+					bestGate = gate;
+					bestDist = dist;
+				}else{
+					if (dist < minDist) {
+						finalGate = gate;
+						minDist = bestDist;
+					}
 				}
 			}
 		});
+
+		// If no good gate found, just run away to the closest
+		if(finalGate == null){
+			finalGate = bestGate;
+			minDist = bestDist;
+		}
 	
 		return {
 		  gate: finalGate,

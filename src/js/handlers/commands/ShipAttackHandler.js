@@ -1,6 +1,6 @@
 class ShipAttackHandler {
 	static get ID() {
-		return 11521; 
+		return 11943; 
 	}
 
 	constructor() {
@@ -12,14 +12,8 @@ class ShipAttackHandler {
 
 			let ship = a.ships[attackedShipId];
 			if(ship){
-				if (attackedShipId != window.hero.id && ship.isNpc && attackerId != window.hero.id && !a.isShipOnBlacklist(attackedShipId) && window.settings.settings.avoidAttackedNpcs && !window.settings.settings.ggbot){
-					if(window.pet != null){
-						if(window.pet.id != attackerId){
-							a.blackListId(attackedShipId);
-						}
-					}else{
-						a.blackListId(attackedShipId);
-					}
+				if(ship.firstAttacker == null && (window.pet == null || window.pet.id != attackerId)){
+					ship.firstAttacker = attackerId;
 				}
 			}
 		}

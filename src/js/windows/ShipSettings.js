@@ -28,6 +28,9 @@ class ShipSettings{
             name: 'changeMode',
             labelText: "Change to flying mode when looking for npcs/boxes",
             appendTo: this.shipSettingsWindow,
+            attrs: {
+                checked : window.settings.settings.changeMode
+            },
             event: function () {
                 window.settings.settings.changeMode = this.checked;
             }

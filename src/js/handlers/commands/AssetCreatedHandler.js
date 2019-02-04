@@ -1,6 +1,6 @@
 class AssetCreatedHandler {
 	static get ID() {
-		return 2448; 
+		return 31979; 
 	}
 
 	constructor() {
