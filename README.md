@@ -8,7 +8,6 @@ How to install/use? EN guide: https://youtu.be/sZOrfItRd2w ES guide: https://you
 
 Chrome/Chromium/Opera Download and extract it Open any web proxy and locate the options Enable HTTPS decryption (you maybe have to trust the certification and restart the proxy) Install the addon through chrome://extensions Use any web proxy to replace the main.swf and preloader.swf Enjoy!
 
-TODO: -Experiment with the bot a bit to learn to make code more efficient
 
 Issues : If the tool doesn't work, try to use Private mode/Incognito. Other situations should be reported in issues (game updates are fine there too).
 
