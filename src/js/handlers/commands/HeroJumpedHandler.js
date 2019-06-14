@@ -1,6 +1,6 @@
 class HeroJumpedHandler{
     static get ID(){
-        return 29399; 
+        return 15251; 
     }
     constructor(){
         this._handler = function(e,a){

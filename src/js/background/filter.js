@@ -5,7 +5,7 @@ BP Sucks
 Lolis > BP
 */
 
-let _hash = "6c77d103529498337367e221ed69a900";
+let _hash = "fcd170118fe0c5cb454972c4215a0700";
 
 let blacklist = [
 	"main-frame",
@@ -19,7 +19,8 @@ let blacklist = [
 	"cnt_minimize_window",
 	"ui-draggable",
 	"ui-draggable-handle",
-	"dompath="
+	"dompath=",
+	"stack"
 ]
 
 chrome.webRequest.onBeforeRequest.addListener(

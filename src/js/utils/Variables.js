@@ -1,110 +1,105 @@
 class Variables {
 	static get assetCreateX() {
-		return "_-x3k";
-	}
-	
-	static get assetCreateY() {
-		return "_-Qt";
-	}
-	
-	static get boxType() {
-		return "_-W4m";
-	}
-	
-	static get gateId() {
-		return "_-b2T";
-	}
-	
-	static get gateType() {
-		return "_-y2Q";
-	}
-	
-	static get attackerId() {
-		return "_-E3n";
-	}
-	
-	static get heroAttackedId() {
-		return "_-E1E";
-	}
-	
-	static get attackHp() {
 		return "_-b15";
 	}
 	
-	static get attackShd() {
-		return "_-c29";
+	static get assetCreateY() {
+		return "_-NJ";
 	}
 	
-	static get heroInitMaxHp() {
-		return "_-Cc";
+	static get boxType() {
+		return "_-p8";
 	}
 	
-	static get heroInitMaxShd() {
-		return "_-M1a";
+	static get gateId() {
+		return "_-V3W";
 	}
 	
-	static get heroInitHp() {
-		return "_-01Y";
-	}
-	
-	static get heroPetId() {
-		return "_-zV";
-	}
-	
-	static get hpUpdateMaxHp() {
-		return "_-85L";
-	}
-	
-	static get hpUpdateHp() {
-		return "_-d4V";
-	}
-	
-	static get heroUpdateShd() {
-		return "_-Z4z";
-	}
-	
-	static get resource() {
-		return "_-z1A";
+	static get gateType() {
+		return "_-j2W";
 	}
 	
 	static get attackerId() {
-		return "_-E3n";
+		return "_-L1h";
+	}
+	
+	static get heroAttackedId() {
+		return "_-11o";
+	}
+	
+	static get attackHp() {
+		return "_-u4y";
+	}
+	
+	static get attackShd() {
+		return "_-d2Y";
+	}
+	
+	static get heroInitMaxHp() {
+		return "_-r33";
+	}
+	
+	static get heroInitMaxShd() {
+		return "_-W1J";
+	}
+	
+	static get heroInitHp() {
+		return "_-S2S";
+	}
+	
+	static get heroPetId() {
+		return "_-k3d";
+	}
+	
+	static get hpUpdateMaxHp() {
+		return "_-35V";
+	}
+	
+	static get hpUpdateHp() {
+		return "_-s1O";
+	}
+	
+	static get heroUpdateShd() {
+		return "_-gE";
+	}
+	
+	static get resource() {
+		return "_-W3S";
 	}
 	
 	static get attackedId() {
-		return "_-8T";
+		return "_-h1W";
 	}
 	
 	static get clanDiplomacy() {
-		return "_-z9";
+		return "_-651";
 	}
 	
 	static get shipDestroyedId() {
-		return "_-A4b";
+		return "_-f3A";
 	}
 	
 	static get moveDuration() {
-		return "_-q47";
+		return "_-z2x";
 	}
 	
 	static get selectMaxHp() {
-		return "_-85L";
+		return "_-35V";
 	}
 	
 	static get selectMaxShd() {
-		return "_-M1a";
+		return "_-W1J";
 	}
 	
 	static get selectHp() {
-		return "_-d4V";
-	}
+		return "_-s1O";
+	}	
 	
-	static get resourceType() {
-		return "_-F3u";
-	}
-
 	static get battlestationClanDiplomacy() {
-		return "_-i1r"; 
+		return "_-I4P"; 
 	}
 	
+	static get resourceType(){
+		return "_-x48";
+	}
 }

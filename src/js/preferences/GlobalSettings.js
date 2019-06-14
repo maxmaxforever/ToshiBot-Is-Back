@@ -2,9 +2,9 @@ class GlobalSettings {
   constructor() {
     let self = this;
     chrome.storage.local.get({
-      headerColor: "#191919",
+      headerColor: "#2D2D2D",
       headerOpacity: "0.9",
-      windowColor: "#191919",
+      windowColor: "#2D2D2D",
       windowOpacity: "0.8",
       timerTick: 300,
       refreshToReconnect: false,

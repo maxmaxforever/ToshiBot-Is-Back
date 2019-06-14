@@ -1,6 +1,6 @@
 class HeroInitHandler {
   static get ID() {
-    return 23148; 
+    return 15445; 
   }
 
 	constructor(f) {
@@ -9,11 +9,13 @@ class HeroInitHandler {
 			a.ships = [];
 			a.boxes = {};
 			a.gates = [];
+			a.rute = null;
 			a.heroDied = false;
 			a.resetTarget("all");
 			a.battlestation = null;
 			Injector.injectScript("window.heroDied = false;");
-
+			window.enemy = null;
+			
 			let heroJson = JSON.parse(e.detail);
 
 			// this handler is called after you have jumped to another map
@@ -41,8 +43,8 @@ class HeroInitHandler {
 				window.b3 = 700;
 				window.bigMap = true;
 			} else {
-				window.b1 = 21000 / 300;
-				window.b2 = 13100 / 150;
+				window.b1 = 20900 / 300;
+				window.b2 = 13000 / 150;
 				window.b3 = 350;
 				window.bigMap = false;
 			}
